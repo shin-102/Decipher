@@ -51,3 +51,4 @@ export const ServiceDescription: React.FC<{ service: ServiceData }> = ({ service
       </section>
     )
 };
+

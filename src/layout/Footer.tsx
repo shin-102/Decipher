@@ -13,9 +13,9 @@ export default function Footer() {
           <h2>Decipher</h2>
         </div>
 
-        <h6 className="max-w-xs text-white leading-8">
+        <p className="max-w-xs text-white leading-8">
           Connect with DECIPHER AGENCY, as we are more than just a service provider; we are your strategic partner in achieving digital excellence.
-        </h6>
+        </p>
 
         <SocialBar className="flex gap-6 items-center justify-center"/>
       </section>
@@ -29,6 +29,7 @@ export default function Footer() {
             <li><Link to='/about' className="hover:text-cyan-400">About</Link></li>
             <li><Link to='/services' className="hover:text-cyan-400">Services</Link></li>
             <li><Link to='/pricing' className="hover:text-cyan-400">Pricing</Link></li>
+            <li><Link to='/contact' className="hover:text-cyan-400">contact</Link></li>
           </ul>
         </section>
 
@@ -38,8 +39,8 @@ export default function Footer() {
           <ul className="mt-6 space-y-4 text-sm">
             <li><Link to='/CustomPage' className="hover:text-cyan-400">Custom Page</Link></li>
             <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
-            <li><a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">FAQs</a></li>
-            <li><a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">Live Chat</a></li>
+            <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
+            <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
           </ul>
         </section>
 
@@ -47,10 +48,10 @@ export default function Footer() {
           <h5 className="font-medium text-gray-900 dark:text-white">Legal</h5>
 
           <ul className="mt-6 space-y-4 text-sm">
-            <li><a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">Accessibility</a></li>
-            <li><a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">Returns Policy</a></li>
-            <li><a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">Refund Policy</a></li>
-            <li><a href="#" className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">Hiring Statistics</a></li>
+            <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
+            <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
+            <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
+            <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
           </ul>
         </section>
       </div>

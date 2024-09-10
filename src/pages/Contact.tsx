@@ -37,7 +37,7 @@ export const Connect = () => {
   )
 }
 
-export const ButtonMailto: React.FC<{ sendto: string; label: string }> = ({ sendto, label }) => {
+export const ButtonMailto: React.FC<{ sendto: string; label: string ; className? : string;}> = ({ sendto, label }) => {
   return (
     <Link
       to="#"

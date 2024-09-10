@@ -1,5 +1,4 @@
 //import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import Layout from '../layout/Layout';
 import { Contact as ContactForm}  from './Home';
 import { Flag } from './Home';
@@ -27,9 +26,12 @@ export const Connect = () => {
           <ButtonMailto label="Phone : +212 7 62 86 16 97" sendto="tel:212762861697" />
         </div>
 
+        {/* 
+        //*JOB OFFERS CV drop --to be added
         <div className='mt-12'>
           <h4>Are you looking for Job Opportunities ?</h4>
-        </div>
+        </div> 
+        */}
         
       </section>
       <ContactForm />
@@ -37,17 +39,14 @@ export const Connect = () => {
   )
 }
 
-export const ButtonMailto: React.FC<{ sendto: string; label: string ; className? : string;}> = ({ sendto, label }) => {
+export const ButtonMailto: React.FC<{ sendto: string; label: string; className?: string; }> = ({ sendto, label }) => {
+  const handleButtonClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    window.location.href = sendto;
+    e.preventDefault();
+  };
+
   return (
-    <Link
-      to="#"
-      onClick={(e) => {
-        window.location.href = sendto;
-        e.preventDefault();
-      }}
-    >
-      {label}
-    </Link>
+    <a href="#" onClick={handleButtonClick} dangerouslySetInnerHTML={{ __html: label.replace(/\n/g, '<br />') }} title="link"/>
   );
 };
 

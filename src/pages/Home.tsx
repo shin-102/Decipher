@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import emailjs from 'emailjs-com'
 import Layout from '../layout/Layout';
 import '../App.css';
@@ -316,7 +317,7 @@ export function Steps() {
           <hr className="w-2/3 h-1 my-4" />
           <h5>Documentation client</h5>
         </div>
-        {hoveredStep === 1 && <Hoverbox>Step 1 text</Hoverbox>}
+        {hoveredStep === 1 && <Hoverbox>Nous recueillons toutes les informations nécessaires sur les besoins et les attentes du client pour garantir une compréhension claire du projet.</Hoverbox>}
         <div className="mx-4 text-Alpha text-5xl">{'>'}</div>
       </section>
 
@@ -330,7 +331,7 @@ export function Steps() {
           <hr className="w-2/3 h-1 my-4" />
           <h5>Analyse et stratégie</h5>
         </div>
-        {hoveredStep === 2 && <Hoverbox>Step 2 text</Hoverbox>}
+        {hoveredStep === 2 && <Hoverbox>Nous analysons les données collectées pour élaborer une stratégie sur mesure qui répond aux objectifs et défis spécifiques du client.</Hoverbox>}
         <div className="mx-4 text-Alpha text-5xl">{'>'}</div>
       </section>
 
@@ -344,7 +345,7 @@ export function Steps() {
           <hr className="w-2/3 h-1 my-4" />
           <h5>Création des solutions</h5>
         </div>
-        {hoveredStep === 3 && <Hoverbox>Step 3 text</Hoverbox>}
+        {hoveredStep === 3 && <Hoverbox>Nous concevons et développons des solutions innovantes basées sur l'analyse, en veillant à leur alignement avec la vision du client.</Hoverbox>}
         <div className="mx-4 text-Alpha text-5xl">{'>'}</div>
       </section>
 
@@ -358,14 +359,14 @@ export function Steps() {
           <hr className="w-2/3 h-1 my-4" />
           <h5>Mise en service</h5>
         </div>
-        {hoveredStep === 4 && <Hoverbox>Step 4 text</Hoverbox>}
+        {hoveredStep === 4 && <Hoverbox>Nous déployons les solutions créées, assurant une transition fluide et offrant un support pour garantir leur bon fonctionnement.</Hoverbox>}
       </section>
       </article>
     </section>
   );
 }
 
-
+//! CHANGE PackagesTable RenderDetail into *TRUE*--------------------
 import { PackagesTable , CustomPack } from "../components/PackagesTable";
 export function Packages() {
   return(
@@ -375,12 +376,14 @@ export function Packages() {
         <h2>Packs Orientation Client</h2>
       </div>
       <div className="flex items-center gap-14">
-        <PackagesTable RenderDetail={true} />
+        <PackagesTable RenderDetail={false} />
         <div>
+          <Link to='/pricing'>
           <svg xmlns="http://www.w3.org/2000/svg" width="100" height="120" viewBox="0 0 140 141" fill="none" className="fill-Beta">
             <rect y="0.5" width="140" height="140" rx="70" fill="inherit"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M83.8072 73.8072L60.7606 96.8538L55 91.0931L75.1663 70.9269L55 50.7606L60.7606 45L83.8072 68.0466C84.5709 68.8106 85 69.8466 85 70.9269C85 72.0072 84.5709 73.0432 83.8072 73.8072Z" fill="#00E2FF"/>
           </svg>
+          </Link>
         </div>
       </div>
     </section>

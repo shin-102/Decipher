@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+# Decipher
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Decipher is the official website for our company. It serves as a comprehensive platform to showcase our mission, values, services, pricing, previous work, and contact options.
 
-Currently, two official plugins are available:
+## Motivation
+The primary motivation behind creating Decipher was to establish a professional online presence for our company, allowing clients and stakeholders to easily access information about us.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Mission & Values**: Clearly outlines our core principles.
+- **Services**: Detailed descriptions of the services we offer.
+- **Pricing**: Transparent pricing information for our services.
+- **Previous Work**: A portfolio section showcasing our completed projects.
+- **Contact Options**: Easy ways for potential clients to get in touch with us.
 
-## Expanding the ESLint configuration
+## Installation and Usage
+Decipher is a web application created using **React**, **TypeScript**, and **Tailwind CSS**, built with Vite. It is not meant to be installed locally, but you can access it directly through the provided URL.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Contribution
+Contributions to Decipher are welcome! You can contribute via our GitHub repository. Please feel free to submit issues or pull requests to help improve the project.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## License
+This project is licensed under a **Proprietary License**. You are not permitted to use, copy, modify, or distribute this project without explicit permission. All rights are reserved by the project owner.

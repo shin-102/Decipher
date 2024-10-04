@@ -39,8 +39,6 @@ export default function Footer() {
           <ul className="mt-6 space-y-4 text-sm">
             <li><Link to='/CustomPage' className="hover:text-cyan-400">Custom Page</Link></li>
             <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
-            <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
-            <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
           </ul>
         </section>
 
@@ -48,17 +46,15 @@ export default function Footer() {
           <h5 className="font-medium text-gray-900 dark:text-white">Legal</h5>
 
           <ul className="mt-6 space-y-4 text-sm">
-            <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
-            <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
-            <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
-            <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
+            <li><small>RC : 69839</small></li>
+            <li><small>ICE : 003280127000093</small></li>
           </ul>
         </section>
       </div>
     </div>
 
     <p className="text-xs text-gray-500 dark:text-gray-400">
-      &copy; 2023. Company Name. All rights reserved.
+      &copy; 2023. Decipher Sarl. All rights reserved.
     </p>
   </div>
 </footer>

@@ -7,7 +7,7 @@ export const PackagesTable: React.FC<DetailRendering> = ({RenderDetail}) => {
   return (
     <div className="container mx-auto px-4 py-8">
     <div className="flex justify-center">
-      <div className="w-full max-w-screen-xl grid grid-cols-3 gap-4">
+      <div className="w-full max-w-screen-xl grid grid-rows-3 md:grid-cols-3 gap-4">
         {/* Start-up Plan */}
         <div className="bg-Beta shadow-lg rounded-lg p-8 border-Alpha/20">
           <div className="py-4">
@@ -151,11 +151,11 @@ export const PackagesTable: React.FC<DetailRendering> = ({RenderDetail}) => {
 export function CustomPack() {
   return(
     <article className="bg-Beta w-full ">
-      <section className="container mx-auto flex justify-center items-center gap-12 py-12">
-        <div className="w-1/2">
-          <h2>Vous souhaitez personnaliser votre propre plan ?</h2>
-          <p>contactez-nous afin de définir vos propres critères</p>
-          <ul className="mt-12">
+      <section className="container mx-auto flex flex-col md:flex-row justify-center items-center gap-12 py-12">
+        <div className="w-full md:w-1/2">
+          <h2 className="leading-none">Vous souhaitez personnaliser votre propre plan ?</h2>
+          <p className="mt-4">contactez-nous afin de définir vos propres critères</p>
+          <ul className="mt-8">
             <li className="flex items-start gap-3">
               <span className="text-green-500">&#x2713;</span>
               <p>Development web</p>

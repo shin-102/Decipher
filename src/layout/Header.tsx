@@ -9,7 +9,7 @@ export default function Header() {
       <style>{css}</style>
       <section className="flex justify-between items-center shrink-0 py-2 container mx-auto ">
         <img src={Decipher} alt="Decipher Logo" width={60}/>
-        <nav>
+        <nav className="hidden md:block">
           <ul className="flex justify-between items-center gap-5">
             <li><Link to='/' className="hover:text-cyan-400">Home</Link></li>
             <li><Link to='/about' className="hover:text-cyan-400">About</Link></li>
@@ -18,7 +18,7 @@ export default function Header() {
             <li><Link to='/contact' className="hover:text-cyan-400">Contact</Link></li>
           </ul>
         </nav>
-        <button className="flex justify-center items-center gap-1 px-2 py-1 group hover:bg-Alpha transition duration-300 ease-in rounded-xl" title="call-opt">
+        <button className="hidden md:flex justify-center items-center gap-1 px-2 py-1 group hover:bg-Alpha transition duration-300 ease-in rounded-xl" title="call-opt">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20" fill="inherit" className="fill-Alpha group-hover:fill-Dark">
             <path d="M3.08998 10C2.20421 10 1.47949 9.25 1.47949 8.33333V4.16667C1.47949 3.25 2.20421 2.5 3.08998 2.5H9.53193C10.4177 2.5 11.1424 3.25 11.1424 4.16667V8.33333C11.1424 9.25 10.4177 10 9.53193 10H7.92144V12.5L5.50571 10H3.08998ZM17.5844 15C18.4701 15 19.1948 14.25 19.1948 13.3333V9.16667C19.1948 8.25 18.4701 7.5 17.5844 7.5H12.7529V8.33333C12.7529 10.1667 11.3035 11.6667 9.53193 11.6667V13.3333C9.53193 14.25 10.2566 15 11.1424 15H12.7529V17.5L15.1686 15H17.5844Z" fill="inherit"/>
           </svg>

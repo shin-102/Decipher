@@ -30,7 +30,7 @@ export function Hero() {
   const [isHovered, setIsHovered] = useState(false);
   return(
     <section className="bg-[url('./src/assets/5765870_3015280.jpeg')] bg-cover bg-center">
-      <section className='flex items-center justify-around h-screen container mx-auto' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+      <section className='flex flex-col md:flex-row items-center justify-around h-screen container mx-auto mt-20 md:mt-0' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
           <div>
             <h1 className='uppercase leading-tight'>Agence Digitale Créative</h1>
               <p className='ml-10 my-5'>Une start-up dynamique dédiée à la transformation des entreprises grâce à des solutions de marketing numérique de pointe et à des stratégies de publicité complètes.</p>
@@ -97,7 +97,7 @@ export function Stakes() {
 import AboutImg from '../assets/AboutIMG.png'
 export function About() {
   return(
-    <section className='flex justify-evenly items-center container mx-auto gap-20'>
+    <section className='flex flex-col md:flex-row justify-evenly items-center container mx-auto gap-20'>
       <div className="flex flex-col items-start gap-20">        
         <svg xmlns="http://www.w3.org/2000/svg" height="150" viewBox="0 0 132 132" fill="none" className="animate-spin-slow">
           <path d="M65.7108 119.036C66.6392 119.036 67.4299 119.289 68.083 119.794C68.7361 120.303 69.2352 121.041 69.5802 122.006C69.9253 122.976 70.0978 124.146 70.0978 125.518C70.0978 126.882 69.9253 128.046 69.5802 129.012C69.2311 129.981 68.7299 130.72 68.0768 131.23C67.4196 131.743 66.6309 132 65.7108 132C64.7907 132 64.0041 131.743 63.351 131.23C62.6938 130.72 62.1926 129.981 61.8476 129.012C61.4984 128.046 61.3239 126.882 61.3239 125.518C61.3239 124.146 61.4964 122.976 61.8414 122.006C62.1865 121.041 62.6855 120.303 63.3387 119.794C63.9918 119.289 64.7825 119.036 65.7108 119.036ZM65.7108 120.392C64.7907 120.392 64.076 120.835 63.5666 121.723C63.0573 122.61 62.8026 123.875 62.8026 125.518C62.8026 126.611 62.9197 127.541 63.1538 128.309C63.3838 129.077 63.7166 129.663 64.152 130.065C64.5833 130.468 65.1029 130.669 65.7108 130.669C66.6227 130.669 67.3354 130.219 67.8489 129.32C68.3623 128.424 68.619 127.157 68.619 125.518C68.619 124.426 68.504 123.497 68.274 122.733C68.044 121.969 67.7133 121.388 67.282 120.989C66.8466 120.591 66.3229 120.392 65.7108 120.392Z" fill="#00E2FF"/>
@@ -141,7 +141,7 @@ export function About() {
 
         <img src={AboutImg} alt="About Image" className="border-Alpha border-b-4 border-r-4 w-4/5 rounded-3xl" />
 
-      <div className="flex flex-col items-start gap-28 w-1/2">
+      <div className="flex flex-col items-start gap-12 md:gap-28 w-full md:w-1/2">
         <article className="flex flex-col items-start gap-6">
           <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="none" className="stroke-Alpha">
             <path d="M18.5 19.5V3L30.5 9L18.5 15" stroke="inherit" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
@@ -158,21 +158,24 @@ export function About() {
             <path d="M11.8857 27.1716C11.6136 27.1378 11.3386 27.2046 11.1123 27.3593C10.663 27.6666 10.2116 27.9703 9.75594 28.2663C8.83414 28.8654 7.73164 27.8135 8.27938 26.8601L9.13368 25.3835C9.25581 25.2048 9.32382 24.9947 9.32955 24.7784C9.33527 24.562 9.27847 24.3486 9.16596 24.1638C9.05344 23.9789 8.88999 23.8304 8.6952 23.7361C8.50041 23.6418 8.28255 23.6056 8.06774 23.632C7.11957 23.7519 6.23823 24.1838 5.5625 24.8597C5.30516 25.1177 4.52258 25.901 4.10141 28.8858C3.98153 29.7431 3.90597 30.606 3.875 31.4712C3.87115 31.6213 3.89741 31.7707 3.95222 31.9105C4.00703 32.0504 4.08929 32.1778 4.19414 32.2854C4.29899 32.3929 4.42432 32.4784 4.56272 32.5367C4.70112 32.595 4.84981 32.625 5 32.625H5.02813C5.89391 32.5943 6.75755 32.5192 7.61563 32.4C10.6018 31.9781 11.3851 31.1948 11.6424 30.9375C12.3214 30.2614 12.7522 29.376 12.8652 28.4245C12.9013 28.1285 12.8184 27.8303 12.6348 27.5953C12.4511 27.3604 12.1817 27.2079 11.8857 27.1716Z" fill="inherit"/>
           </svg>
           <h3>Mission</h3>
-          <p>Nous nous engageons à développer des partenariats durables fondés sur la confiance et le dévouement total pour obtenir des résultats mesurables. Notre objectif est d’offrir des pratiques qui permettent à nos clients de réussir, tant au Maroc qu’à l’international. </p>
+          <p>Nous nous engageons à développer des partenariats durables fondés sur la confiance et le dévouement total pour obtenir des résultats mesurables. <br /> Notre objectif est d’offrir des pratiques qui permettent à nos clients de réussir, tant au Maroc qu’à l’international. </p>
         </article>
       </div>
 
     </section>
   );
 };
-
+//? import IconSlider from "../components/IconSlider";
 export function ValueProposition() {
   return (
     <article className="relative">
-      <section className="flex flex-col justify-center items-center gap-12 container mx-auto text-center bg-Beta rounded-3xl p-16 w-1/2">
+      <section className="flex flex-col justify-center items-center gap-12 container mx-auto text-left md:text-center bg-Beta rounded-3xl p-16 w-full md:w-1/2">
         <h2>Nous proposons...</h2>
         <p> Des solutions flexibles et mutuellement bénéfiques afin de donner une chance équitable aux entreprises sur un marché concurrentiel. Pourquoi laisser votre stratégie commerciale et votre potentiel inexploités, alors que le simple manque de publicité et de marketing peut faire toute la différence ?</p>
       </section>
+      {/*
+       // ? <IconSlider/> 
+       */}
     </article>
   )
 }
@@ -209,13 +212,13 @@ export const Service: React.FC = () => {
   
 
   return (
-    <section className="container mx-auto grid grid-cols-2 gap-20">
+    <section className="container mx-auto block md:grid grid-cols-2 gap-20">
         <div>
           <div className="flex justify-center flex-col items-start">
             <Flag title='Nos qualités'/>
             <h2>Services principaux fournis</h2>
           </div>       
-          <SerivceGrid services={servicesList} className="mt-8" onSelect={handleServiceClick} />   
+          <SerivceGrid services={servicesList} className="mt-8 mb-8 md:mb-0" onSelect={handleServiceClick} />   
         </div>
 
         <div>
@@ -232,7 +235,7 @@ const SerivceDescription: React.FC<SerivceDescriptionProps> = ({service}) => {
   return (
     <div className="bg-Beta p-8 flex flex-col justify-between gap-8 rounded-3xl">
       <div className="w-full">
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-center text-center md:text-left mb-8">
           <div className="h-10 w-10">
             {service.icon}
           </div>
@@ -301,7 +304,7 @@ const Hoverbox: React.FC<HoverboxProps> = ({ children }) => {
 export function Steps() {
   const [hoveredStep, setHoveredStep] = useState<number | null>(null);
   return(
-    <section className="flex flex-col items-center container mx-auto gap-24">
+    <section className="hidden md:flex flex-col items-center container mx-auto gap-24">
       <div>
         <Flag title="étapes vers le succès"/>
         <h2>flux de travail</h2>
@@ -375,7 +378,7 @@ export function Packages() {
         <Flag title="Prix avantageux"/>
         <h2>Packs Orientation Client</h2>
       </div>
-      <div className="flex items-center gap-14">
+      <div className="flex flex-col md:flex-row items-center gap-14">
         <PackagesTable RenderDetail={false} />
         <div>
           <Link to='/pricing'>

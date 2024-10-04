@@ -7,9 +7,9 @@ export const PackagesTable: React.FC<DetailRendering> = ({RenderDetail}) => {
   return (
     <div className="container mx-auto px-4 py-8">
     <div className="flex justify-center">
-      <div className="w-full max-w-screen-xl grid grid-rows-3 md:grid-cols-3 gap-4">
+      <div className="w-full max-w-screen-xl block md:grid grid-cols-3 gap-4">
         {/* Start-up Plan */}
-        <div className="bg-Beta shadow-lg rounded-lg p-8 border-Alpha/20">
+        <div className="bg-Beta shadow-lg rounded-lg p-8 border-Alpha/20 mb-6 md:mb-0">
           <div className="py-4">
             <h4 className="font-semibold text-center">Start-up</h4>
           </div>
@@ -53,7 +53,7 @@ export const PackagesTable: React.FC<DetailRendering> = ({RenderDetail}) => {
         </div>
 
         {/* Standard Plan */}
-        <div className="bg-Beta shadow-lg rounded-lg border-Alpha p-8 relative">
+        <div className="bg-Beta shadow-lg rounded-lg border-Alpha p-8 relative mb-6 md:mb-0">
           <div className="bg-Alpha py-2 rounded-t-lg absolute inset-x-0 top-0">
             <p className="text-xs text-Dark text-center">Recommended</p>
           </div>
@@ -100,7 +100,7 @@ export const PackagesTable: React.FC<DetailRendering> = ({RenderDetail}) => {
         </div>
 
         {/* Advanced Plan */}
-        <div className="bg-Beta shadow-lg rounded-lg p-8 border-Alpha/20">
+        <div className="bg-Beta shadow-lg rounded-lg p-8 border-Alpha/20 mb-6 md:mb-0">
           <div className="py-4">
             <h4 className="font-semibold text-center">Advanced</h4>
           </div>
@@ -152,7 +152,7 @@ export function CustomPack() {
   return(
     <article className="bg-Beta w-full ">
       <section className="container mx-auto flex flex-col md:flex-row justify-center items-center gap-12 py-12">
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 ">
           <h2 className="leading-none">Vous souhaitez personnaliser votre propre plan ?</h2>
           <p className="mt-4">contactez-nous afin de définir vos propres critères</p>
           <ul className="mt-8">

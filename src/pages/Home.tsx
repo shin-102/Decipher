@@ -31,9 +31,9 @@ export function Hero() {
   return(
     <section className="bg-[url('./src/assets/5765870_3015280.jpeg')] bg-cover bg-center">
       <section className='flex flex-col md:flex-row items-center justify-around h-screen container mx-auto mt-20 md:mt-0' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-          <div>
+          <div className="ml-4 md:ml-0">
             <h1 className='uppercase leading-tight'>Agence Digitale Créative</h1>
-              <p className='ml-10 my-5'>Une start-up dynamique dédiée à la transformation des entreprises grâce à des solutions de marketing numérique de pointe et à des stratégies de publicité complètes.</p>
+              <p className='ml-4 md:ml-10 my-5'>Une start-up dynamique dédiée à la transformation des entreprises grâce à des solutions de marketing numérique de pointe et à des stratégies de publicité complètes.</p>
               <button className='bg-Alpha text-Dark py-2 px-8 ml-10'>Connect</button>      
           </div>
           
@@ -97,7 +97,7 @@ export function Stakes() {
 import AboutImg from '../assets/AboutIMG.png'
 export function About() {
   return(
-    <section className='flex flex-col md:flex-row justify-evenly items-center container mx-auto gap-20'>
+    <section className='flex flex-col md:flex-row justify-evenly items-center container mx-auto gap-6 md:gap-20'>
       <div className="flex flex-col items-start gap-20">        
         <svg xmlns="http://www.w3.org/2000/svg" height="150" viewBox="0 0 132 132" fill="none" className="animate-spin-slow">
           <path d="M65.7108 119.036C66.6392 119.036 67.4299 119.289 68.083 119.794C68.7361 120.303 69.2352 121.041 69.5802 122.006C69.9253 122.976 70.0978 124.146 70.0978 125.518C70.0978 126.882 69.9253 128.046 69.5802 129.012C69.2311 129.981 68.7299 130.72 68.0768 131.23C67.4196 131.743 66.6309 132 65.7108 132C64.7907 132 64.0041 131.743 63.351 131.23C62.6938 130.72 62.1926 129.981 61.8476 129.012C61.4984 128.046 61.3239 126.882 61.3239 125.518C61.3239 124.146 61.4964 122.976 61.8414 122.006C62.1865 121.041 62.6855 120.303 63.3387 119.794C63.9918 119.289 64.7825 119.036 65.7108 119.036ZM65.7108 120.392C64.7907 120.392 64.076 120.835 63.5666 121.723C63.0573 122.61 62.8026 123.875 62.8026 125.518C62.8026 126.611 62.9197 127.541 63.1538 128.309C63.3838 129.077 63.7166 129.663 64.152 130.065C64.5833 130.468 65.1029 130.669 65.7108 130.669C66.6227 130.669 67.3354 130.219 67.8489 129.32C68.3623 128.424 68.619 127.157 68.619 125.518C68.619 124.426 68.504 123.497 68.274 122.733C68.044 121.969 67.7133 121.388 67.282 120.989C66.8466 120.591 66.3229 120.392 65.7108 120.392Z" fill="#00E2FF"/>
@@ -133,7 +133,7 @@ export function About() {
           <path d="M89.6114 127.471L84.7825 115.813L86.1942 115.228L90.4101 125.406L90.4784 125.378L92.5418 122.309L93.136 123.744L91.0232 126.886L89.6114 127.471Z" fill="#00E2FF"/>
           <path d="M76.0632 118.074C76.9737 117.893 77.7985 117.986 78.5377 118.354C79.2776 118.726 79.9109 119.352 80.4377 120.231C80.9652 121.115 81.3628 122.229 81.6305 123.575C81.8965 124.913 81.9545 126.088 81.8044 127.102C81.6511 128.121 81.3038 128.944 80.7626 129.571C80.2182 130.203 79.4948 130.609 78.5923 130.788C77.6899 130.968 76.8683 130.869 76.1276 130.493C75.3836 130.122 74.7479 129.494 74.2203 128.611C73.6896 127.732 73.2912 126.624 73.0251 125.287C72.7575 123.941 72.6983 122.759 72.8476 121.741C72.9977 120.727 73.3433 119.907 73.8845 119.28C74.4265 118.657 75.1528 118.255 76.0632 118.074ZM76.3277 119.403C75.4253 119.583 74.8108 120.157 74.4843 121.127C74.1579 122.096 74.1549 123.387 74.4755 124.998C74.6886 126.07 74.9849 126.96 75.3644 127.667C75.7399 128.376 76.1804 128.885 76.686 129.195C77.1875 129.506 77.7364 129.602 78.3327 129.483C79.2271 129.305 79.8383 128.725 80.1664 127.742C80.4953 126.764 80.4999 125.471 80.1801 123.864C79.967 122.792 79.673 121.904 79.2984 121.199C78.9237 120.495 78.486 119.989 77.9853 119.683C77.4805 119.377 76.928 119.284 76.3277 119.403Z" fill="#00E2FF"/>
         </svg>
-        <div className='flex flex-col'>
+        <div className='flex flex-col ml-6 md:ml-0'>
           <Flag title="A propos de l'entreprise"/>
           <h2 className='font-extrabold capitalize'>Satisfaction locale et globale</h2>
         </div>
@@ -142,7 +142,7 @@ export function About() {
         <img src={AboutImg} alt="About Image" className="border-Alpha border-b-4 border-r-4 w-4/5 rounded-3xl" />
 
       <div className="flex flex-col items-start gap-12 md:gap-28 w-full md:w-1/2">
-        <article className="flex flex-col items-start gap-6">
+        <article className="flex flex-col items-start gap-6 ml-6 md:ml-0">
           <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="none" className="stroke-Alpha">
             <path d="M18.5 19.5V3L30.5 9L18.5 15" stroke="inherit" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M31.3415 15.333C32.1397 17.7932 32.2144 20.4309 31.5567 22.9324C30.8989 25.4338 29.5365 27.6936 27.6314 29.443C25.7262 31.1924 23.3587 32.3577 20.8104 32.8002C18.262 33.2428 15.6402 32.944 13.2568 31.9393C10.8735 30.9347 8.82884 29.2666 7.36624 27.1334C5.90364 25.0001 5.08462 22.4917 5.00663 19.9064C4.92864 17.3211 5.59496 14.7678 6.92631 12.5503C8.25767 10.3328 10.198 8.54447 12.5165 7.398" stroke="inherit" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
@@ -151,7 +151,7 @@ export function About() {
           <h3>Objectifs</h3>
           <p>Construire des partenariats à long terme fondés sur la confiance, la transparence et les résultats mesurables, assurant le succès de nos clients dans l'environnement concurrentiel d'aujourd'hui.</p>
         </article>
-        <article className="flex flex-col items-start gap-6">
+        <article className="flex flex-col items-start gap-6 ml-6 md:ml-0">
           <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="none" className="fill-Alpha">
             <path d="M23.6223 11.0243C23.1882 11.0245 22.7675 11.1753 22.4321 11.4509C22.0966 11.7265 21.8671 12.1099 21.7826 12.5358C21.6981 12.9616 21.7639 13.4036 21.9687 13.7864C22.1736 14.1692 22.5048 14.4691 22.906 14.6351C23.3072 14.801 23.7535 14.8227 24.1689 14.6965C24.5843 14.5703 24.9431 14.304 25.1842 13.9429C25.4252 13.5818 25.5336 13.1483 25.4909 12.7162C25.4481 12.2842 25.2569 11.8803 24.9498 11.5734C24.7757 11.3989 24.5687 11.2606 24.3409 11.1663C24.1131 11.0721 23.8689 11.0238 23.6223 11.0243Z" fill="inherit"/>
             <path d="M34.07 3.51984C34.0697 3.51774 34.0697 3.51561 34.07 3.51351C34.0106 3.25287 33.8795 3.01404 33.6915 2.82395C33.5035 2.63387 33.2662 2.50009 33.0062 2.43773C30.9109 1.92656 27.6147 2.47148 23.9619 3.93398C20.2804 5.41054 16.8308 7.59023 14.4993 9.92601C13.752 10.6694 13.0577 11.4642 12.4215 12.3047C10.8515 12.2344 9.4684 12.458 8.30333 12.9663C4.24348 14.753 3.08403 19.3254 2.77536 21.2027C2.73069 21.4695 2.74818 21.7429 2.82646 22.0018C2.90475 22.2607 3.04171 22.498 3.2267 22.6953C3.41169 22.8926 3.63971 23.0446 3.89302 23.1394C4.14632 23.2341 4.41809 23.2692 4.68715 23.2418H4.6963L9.21879 22.7482C9.22442 22.8059 9.23075 22.8586 9.23567 22.9071C9.29375 23.4582 9.53952 23.9726 9.93176 24.364L12.1389 26.5725C12.5297 26.9653 13.044 27.2114 13.595 27.2693L13.7462 27.2855L13.254 31.8023V31.8115C13.2289 32.0547 13.2548 32.3006 13.33 32.5333C13.4053 32.766 13.5283 32.9804 13.6912 33.1628C13.854 33.3453 14.0532 33.4917 14.2758 33.5928C14.4985 33.694 14.7399 33.7475 14.9844 33.75C15.0822 33.7502 15.1798 33.7422 15.2762 33.7261C17.1641 33.4223 21.7344 32.2769 23.5161 28.1953C24.0203 27.038 24.2432 25.6605 24.1806 24.0933C25.0248 23.4585 25.8226 22.7641 26.5677 22.0155C28.9182 19.6769 31.105 16.2555 32.5661 12.6274C34.0208 9.01616 34.5686 5.69531 34.07 3.51984ZM26.5424 15.8161C25.9647 16.3944 25.2284 16.7884 24.4267 16.9482C23.625 17.108 22.7939 17.0264 22.0386 16.7138C21.2832 16.4011 20.6376 15.8715 20.1834 15.1919C19.7291 14.5122 19.4866 13.7131 19.4866 12.8957C19.4866 12.0782 19.7291 11.2791 20.1834 10.5994C20.6376 9.9198 21.2832 9.39016 22.0386 9.07753C22.7939 8.76489 23.625 8.68331 24.4267 8.84311C25.2284 9.0029 25.9647 9.39689 26.5424 9.97523C26.9296 10.3566 27.2371 10.8113 27.447 11.3126C27.6569 11.814 27.765 12.3521 27.765 12.8957C27.765 13.4392 27.6569 13.9773 27.447 14.4787C27.2371 14.98 26.9296 15.4347 26.5424 15.8161Z" fill="inherit"/>
@@ -214,7 +214,7 @@ export const Service: React.FC = () => {
   return (
     <section className="container mx-auto block md:grid grid-cols-2 gap-20">
         <div>
-          <div className="flex justify-center flex-col items-start">
+          <div className="flex justify-center flex-col items-start ml-6 md:ml-0">
             <Flag title='Nos qualités'/>
             <h2>Services principaux fournis</h2>
           </div>       
@@ -305,7 +305,7 @@ export function Steps() {
   const [hoveredStep, setHoveredStep] = useState<number | null>(null);
   return(
     <section className="hidden md:flex flex-col items-center container mx-auto gap-24">
-      <div>
+      <div className="ml-6 md:ml-0">
         <Flag title="étapes vers le succès"/>
         <h2>flux de travail</h2>
       </div>
@@ -374,13 +374,14 @@ import { PackagesTable , CustomPack } from "../components/PackagesTable";
 export function Packages() {
   return(
     <section className="flex flex-col items-center container mx-auto gap-24">
-      <div>
+      <div className="ml-6 md:ml-0">
         <Flag title="Prix avantageux"/>
         <h2>Packs Orientation Client</h2>
       </div>
-      <div className="flex flex-col md:flex-row items-center gap-14">
+      <div className="flex flex-col md:flex-row items-center gap-0 md:gap-14">
         <PackagesTable RenderDetail={false} />
-        <div>
+        <div className="flex md:block flex-col items-center justify-center">
+          <p className="text-center block md:hidden">plus d'informations</p> 
           <Link to='/pricing'>
           <svg xmlns="http://www.w3.org/2000/svg" width="100" height="120" viewBox="0 0 140 141" fill="none" className="fill-Beta">
             <rect y="0.5" width="140" height="140" rx="70" fill="inherit"/>

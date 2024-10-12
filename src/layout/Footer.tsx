@@ -39,6 +39,7 @@ export default function Footer() {
           <ul className="mt-6 space-y-4 text-sm">
             <li><Link to='/CustomPage' className="hover:text-cyan-400">Custom Page</Link></li>
             <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
+            <li><Link to='/projects' className="hover:text-cyan-400">Projects</Link></li>
           </ul>
         </section>
 

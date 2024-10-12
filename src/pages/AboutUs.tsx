@@ -6,6 +6,7 @@ export default function AboutUs() {
   return(
     <Layout>
       <HeaderSect />
+      <Cases />
       <About />
       <AboutDesc />
     </Layout>
@@ -16,16 +17,14 @@ export default function AboutUs() {
 
 export function HeaderSect() {  
   const links = [
-    { name: 'Open roles', href: '#' },
-    { name: 'Internship program', href: '#' },
-    { name: 'Our values', href: '#' },
-    { name: 'Meet our leadership', href: '#' },
+    { name: 'Open roles', href: 'https://ma.indeed.com/jobs?q=Decipher&l=K%C3%A9nitra' },
+    /*{ name: 'Internship program', href: '#' },
+    { name: 'Our values', href: '#' },*/
   ]
   const stats = [
-    { name: 'Offices worldwide', value: '12' },
-    { name: 'Full-time colleagues', value: '300+' },
-    { name: 'Hours per week', value: '40' },
-    { name: 'Paid time off', value: 'Unlimited' },
+    { name: 'Local office', value: '1' },
+    /*{ name: 'Team members', value: '9' },
+    { name: 'Services provided', value: '+60' },*/
   ]
   
     return (
@@ -70,6 +69,84 @@ export function HeaderSect() {
     )
 }
 
+export function Cases() {
+  return(
+<section className="py-10 sm:py-16 lg:py-24">
+    <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="grid items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 sm:gap-x-12 gap-y-12">
+            <div className="lg:col-span-2">
+                <h2 className="text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl lg:leading-tight">
+                    1 team.<br />
+                    1 year.<br />
+                    60+ projects.<br />
+                </h2>
+                <p className="mt-6 text-base ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </div>
+
+            <div className="lg:col-span-3 xl:col-span-4">
+                <div className="grid items-center max-w-4xl grid-cols-2 mx-auto lg:grid-cols-4 gap-x-10 gap-y-16">
+                    <div>
+                        <img className="object-contain w-full h-6 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-1.png" alt="" />
+                    </div>
+
+                    <div>
+                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-2.png" alt="" />
+                    </div>
+
+                    <div>
+                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-3.png" alt="" />
+                    </div>
+
+                    <div>
+                        <img className="object-contain w-full mx-auto h-7" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-4.png" alt="" />
+                    </div>
+
+                    <div className="hidden lg:block">
+                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-5.png" alt="" />
+                    </div>
+
+                    <div className="hidden lg:block">
+                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-6.png" alt="" />
+                    </div>
+
+                    <div className="hidden lg:block">
+                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-7.png" alt="" />
+                    </div>
+
+                    <div className="hidden lg:block">
+                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-8.png" alt="" />
+                    </div>
+
+                    <div className="hidden lg:block">
+                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-9.png" alt="" />
+                    </div>
+
+                    <div className="hidden lg:block">
+                        <img className="object-contain w-full mx-auto h-7" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-10.png" alt="" />
+                    </div>
+
+                    <div className="hidden lg:block">
+                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-11.png" alt="" />
+                    </div>
+
+                    <div className="hidden lg:block">
+                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-12.png" alt="" />
+                    </div>
+                </div>
+
+                <div className="flex items-center justify-start mt-10 space-x-3 lg:hidden">
+                    <div className="w-2.5 h-2.5 rounded-full bg-blue-600 block"></div>
+                    <div className="w-2.5 h-2.5 rounded-full bg-gray-300 block"></div>
+                    <div className="w-2.5 h-2.5 rounded-full bg-gray-300 block"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  )
+}
+
 import ValueoneSVG from '../assets/ExcellenceValue.svg';
 import ValuetwoSVG from '../assets/InnovationValue.svg';
 import ValuethreeSVG from '../assets/CentricValue.svg';
@@ -92,7 +169,7 @@ export function AboutDesc() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
           <div>
-            <ul className='flex flex-col gap-3'>
+            <ul className='flex flex-col gap-12'>
               <li className="flex items-start gap-3">
                 <img src={ValueoneSVG} alt="value 1" className='w-14'/>
                 <p className="text-muted-foreground">
@@ -152,7 +229,7 @@ export function AboutDesc() {
           <p className="text-muted-foreground mb-4">
             Our culture is characterized by a dynamic and inclusive environment that promotes individual growth and team cooperation. Here are the main aspects of our culture:
           </p>
-          <ul className='flex flex-col gap-3 mb-4'>
+          <ul className='flex flex-col gap-3 ml-4 mb-4'>
             <li><span className='underline'>Open Communication:</span> We encourage open and honest dialogue at all levels, promoting transparency and constructive feedback.</li>
             <li><span className='underline'>Continuous Learning:</span> We prioritize the growth of our team through ongoing training, development opportunities, and access to the latest industry information.</li>
             <li><span className='underline'>Work-Life Balance:</span> We promote a healthy work-life balance, supporting flexible work arrangements that allow our team to thrive personally and professionally.</li>

@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
 import CustomPage from './pages/CustomPage';
+import Projects from './pages/Projects';
 import P404 from './pages/404';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path='/pricing' element={ <Pricing/> }/>
         <Route path='/contact' element={ <Contact/> }/>
         <Route path='/CustomPage' element={ <CustomPage/> }/>
+        <Route path='/projects' element={ <Projects/> }/>
         <Route path='/404' element={ <P404/> }/>
       </Routes>
     </>

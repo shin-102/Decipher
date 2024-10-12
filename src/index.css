@@ -4,27 +4,27 @@
 
 @layer base {
   h1 {
-    @apply text-[68px] font-black;
+    @apply text-4xl lg:text-[68px] font-black;
   }
   h2 {
-    @apply text-[54px] font-extrabold;
+    @apply text-[32px] lg:text-[54px] font-extrabold;
   }
   h3 {
-    @apply text-[43px] font-bold;
+    @apply text-[32px] lg:text-[43px] font-bold;
   }
   h4 {
-    @apply text-[35px] font-semibold;
+    @apply text-xl lg:text-[35px] font-semibold;
   }
   h5 {
-    @apply text-[28px] font-semibold;
+    @apply text-lg lg:text-[28px] font-semibold;
   }
   h6 {
-    @apply text-[22px] font-medium;
+    @apply text-base lg:text-[22px] font-medium;
   }
   p {
-    @apply text-[18px] font-normal;
+    @apply text-sm lg:text-[18px] font-normal;
   }
   small {
-    @apply text-[14px] font-light;
+    @apply text-xs lg:text-[14px] font-light;
   }
 }

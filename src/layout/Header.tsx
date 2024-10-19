@@ -10,7 +10,7 @@ const MenuIcon: React.FC<{ onClick: () => void }> = ({ onClick }) => (
     version="1.1"
     viewBox="0 0 256 256"
     onClick={onClick}
-    className="cursor-pointer w-12 fill-Alpha block md:hidden"
+    className="cursor-pointer w-10 lg:w-12 fill-Alpha block md:hidden"
   >
 
     <defs>
@@ -32,7 +32,7 @@ export default function Header() {
     <header className="fixed inset-x-0 md:w-full backdrop-blur bg-Beta-secondary/20 z-10">
       <style>{css}</style>
       <section className="flex justify-between items-center shrink-0 py-2 px-4 md:px-0 container mx-auto relative">
-        <img src={Decipher} alt="Decipher Logo" width={60} />
+        <img src={Decipher} alt="Decipher Logo" className="h-12 lg:h-[60px]" />
 
         <nav className="hidden md:block">
           <ul className="flex justify-between items-center gap-5">

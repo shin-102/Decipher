@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import Layout from "../layout/Layout";
-import { HeaderSect } from "./AboutUs";
+import { HeaderSect, Cases } from "./AboutUs";
 
 export default function Projects() {
     return(
       <Layout>
         <HeaderSect />
+        <Cases />
         <section className="container mx-auto grid-cols-2">
           <ProjectGrid />
         </section>

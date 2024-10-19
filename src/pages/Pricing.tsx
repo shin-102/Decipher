@@ -57,7 +57,7 @@ export const PriceComparison = () => {
             <tr key={property} className='border-b border-white/10'>
               <td  className='py-5 px-4 capitalize'>{transformPropertyName(property)}</td>
               {ComparisonValues.map((obj, index) => (
-                <td key={index} className='border-black/20 border-collapse text-xl'>
+                <td key={index} className='border-black/20 border-collapse text-base lg:text-xl'>
                   {
                     typeof obj[property as keyof ComparedData] === 'boolean' ? //is object's props has a boolean value ?
                     ( obj[property as keyof ComparedData] ? //boolean true => checkmark, otherwise => "-"

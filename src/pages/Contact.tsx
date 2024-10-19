@@ -14,8 +14,8 @@ export default function Contact() {
 
 export const Connect = () => {
   return(
-    <article className='container mx-auto flex items-center justify-center gap-12'>
-      <section className='w-full'>
+    <article className='container mx-auto flex flex-col lg:flex-row items-center justify-center gap-12 mt-20 md:mt-0'>
+      <section className='w-full ml-4 md:ml-0'>
         <Flag title='Contact Us' />
         <h2>Ready to Connect with us ?</h2>
         <div className='flex flex-col gap-4 mt-12'>
@@ -54,7 +54,7 @@ export const ButtonMailto: React.FC<{ sendto: string; label: string; className?:
 export const Iframe = () => {
   return (
     <div className="w-full">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13191.026487017421!2d-6.593728!3d34.2547534!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b0f343cbfad767%3A0x5aecacc1eec48caf!2sDecipher%20Agency!5e0!3m2!1sen!2sma!4v1725980360277!5m2!1sen!2sma" width="600" height="450" title="map" className="w-full"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13191.026487017421!2d-6.593728!3d34.2547534!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b0f343cbfad767%3A0x5aecacc1eec48caf!2sDecipher%20Agency!5e0!3m2!1sen!2sma!4v1725980360277!5m2!1sen!2sma" width="600" height="450" title="map" className="w-full mb-20 lg:mb-0"></iframe>
     </div>
     
   )

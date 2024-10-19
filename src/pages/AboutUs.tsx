@@ -69,6 +69,11 @@ export function HeaderSect() {
     )
 }
 
+import Alphabet from '../assets/logo-cases/alphabet.png';
+import LDV from '../assets/logo-cases/LDV-removebg.png';
+import Demarco from '../assets/logo-cases/DEMARCO.png';
+import Gmedia from '../assets/logo-cases/Gmedia.png';
+
 export function Cases() {
   return(
 <section className="py-10 sm:py-16 lg:py-24">
@@ -86,19 +91,19 @@ export function Cases() {
             <div className="lg:col-span-3 xl:col-span-4">
                 <div className="grid items-center max-w-4xl grid-cols-2 mx-auto lg:grid-cols-4 gap-x-10 gap-y-16">
                     <div>
-                        <img className="object-contain w-full h-6 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-1.png" alt="" />
+                        <img className="object-contain w-full h-40 mx-auto filter grayscale" src={Alphabet} alt="" />
                     </div>
 
                     <div>
-                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-2.png" alt="" />
+                        <img className="object-contain w-full h-40 mx-auto filter grayscale" src={LDV} alt="" />
                     </div>
 
                     <div>
-                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-3.png" alt="" />
+                        <img className="object-contain w-full h-40 mx-auto filter grayscale" src={Demarco} alt="" />
                     </div>
 
                     <div>
-                        <img className="object-contain w-full mx-auto h-7" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-4.png" alt="" />
+                        <img className="object-contain w-full h-20 mx-auto filter grayscale" src={Gmedia} alt="" />
                     </div>
 
                     <div className="hidden lg:block">

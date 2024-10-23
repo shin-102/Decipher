@@ -33,7 +33,7 @@ export function Hero() {
       <section className='flex flex-col md:flex-row items-center justify-around h-screen container mx-auto mt-20 md:mt-0' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
           <div className="ml-4 md:ml-0">
             <h1 className='uppercase leading-tight'>Agence Digitale Créative</h1>
-              <p className='ml-4 md:ml-10 my-5'>Une start-up dynamique dédiée à la transformation des entreprises grâce à des solutions de marketing numérique de pointe et à des stratégies de publicité complètes.</p>
+              <p className='ml-4 md:ml-10 my-5 leading-8'>Une start-up dynamique dédiée à la transformation des entreprises grâce à des solutions de marketing numérique de pointe et à des stratégies de publicité complètes.</p>
               <button className='bg-Alpha text-Dark py-2 px-8 ml-10'>Connect</button>      
           </div>
           
@@ -149,7 +149,7 @@ export function About() {
             <path d="M12.503 14.9955C11.7513 15.996 11.262 17.1687 11.0795 18.4068C10.8971 19.6448 11.0273 20.9088 11.4584 22.0837C11.8894 23.2585 12.6076 24.3068 13.5475 25.1331C14.4873 25.9593 15.619 26.5373 16.8394 26.8142C18.0597 27.0912 19.33 27.0584 20.5345 26.7189C21.739 26.3793 22.8393 25.7438 23.7353 24.8701C24.6313 23.9965 25.2944 22.9125 25.6643 21.717C26.0342 20.5215 26.099 19.2525 25.853 18.0255" stroke="inherit" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           <h3>Objectifs</h3>
-          <p>Construire des partenariats à long terme fondés sur la confiance, la transparence et les résultats mesurables, assurant le succès de nos clients dans l'environnement concurrentiel d'aujourd'hui.</p>
+          <p className="leading-8">Construire des partenariats à long terme fondés sur la confiance, la transparence et les résultats mesurables, assurant le succès de nos clients dans l'environnement concurrentiel d'aujourd'hui.</p>
         </article>
         <article className="flex flex-col items-start gap-2 lg:gap-6 ml-6 md:ml-0">
           <svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36" fill="none" className="fill-Alpha">
@@ -158,7 +158,7 @@ export function About() {
             <path d="M11.8857 27.1716C11.6136 27.1378 11.3386 27.2046 11.1123 27.3593C10.663 27.6666 10.2116 27.9703 9.75594 28.2663C8.83414 28.8654 7.73164 27.8135 8.27938 26.8601L9.13368 25.3835C9.25581 25.2048 9.32382 24.9947 9.32955 24.7784C9.33527 24.562 9.27847 24.3486 9.16596 24.1638C9.05344 23.9789 8.88999 23.8304 8.6952 23.7361C8.50041 23.6418 8.28255 23.6056 8.06774 23.632C7.11957 23.7519 6.23823 24.1838 5.5625 24.8597C5.30516 25.1177 4.52258 25.901 4.10141 28.8858C3.98153 29.7431 3.90597 30.606 3.875 31.4712C3.87115 31.6213 3.89741 31.7707 3.95222 31.9105C4.00703 32.0504 4.08929 32.1778 4.19414 32.2854C4.29899 32.3929 4.42432 32.4784 4.56272 32.5367C4.70112 32.595 4.84981 32.625 5 32.625H5.02813C5.89391 32.5943 6.75755 32.5192 7.61563 32.4C10.6018 31.9781 11.3851 31.1948 11.6424 30.9375C12.3214 30.2614 12.7522 29.376 12.8652 28.4245C12.9013 28.1285 12.8184 27.8303 12.6348 27.5953C12.4511 27.3604 12.1817 27.2079 11.8857 27.1716Z" fill="inherit"/>
           </svg>
           <h3>Mission</h3>
-          <p>Nous nous engageons à développer des partenariats durables fondés sur la confiance et le dévouement total pour obtenir des résultats mesurables. <br /> Notre objectif est d’offrir des pratiques qui permettent à nos clients de réussir, tant au Maroc qu’à l’international. </p>
+          <p className="leading-8">Nous nous engageons à développer des partenariats durables fondés sur la confiance et le dévouement total pour obtenir des résultats mesurables. <br /> Notre objectif est d’offrir des pratiques qui permettent à nos clients de réussir, tant au Maroc qu’à l’international. </p>
         </article>
       </div>
 
@@ -171,7 +171,7 @@ export function ValueProposition() {
     <article className="relative">
       <section className="flex flex-col justify-center items-center gap-12 container mx-auto text-left md:text-center bg-Beta rounded-3xl p-16 w-full md:w-1/2">
         <h2>Nous proposons...</h2>
-        <p> Des solutions flexibles et mutuellement bénéfiques afin de donner une chance équitable aux entreprises sur un marché concurrentiel. Pourquoi laisser votre stratégie commerciale et votre potentiel inexploités, alors que le simple manque de publicité et de marketing peut faire toute la différence ?</p>
+        <p className="leading-8"> Des solutions flexibles et mutuellement bénéfiques afin de donner une chance équitable aux entreprises sur un marché concurrentiel. Pourquoi laisser votre stratégie commerciale et votre potentiel inexploités, alors que le simple manque de publicité et de marketing peut faire toute la différence ?</p>
       </section>
       {/*
        // ? <IconSlider/> 
@@ -298,7 +298,7 @@ const SerivceGridItem: React.FC<SerivceGridItemProps> = ({service, onClick}) => 
 
 interface HoverboxProps {children: React.ReactNode;}
 const Hoverbox: React.FC<HoverboxProps> = ({ children }) => {
-  return <span className="absolute -bottom-12 bg-Beta p-2 rounded shadow">{children}</span>;
+  return <span className="absolute -bottom-28 bg-Beta py-4 px-2 rounded shadow">{children}</span>;
 };
 
 export function Steps() {
@@ -309,8 +309,9 @@ export function Steps() {
         <Flag title="étapes vers le succès"/>
         <h2>flux de travail</h2>
       </div>
+      
       <article className="flex items-center justify-center space-x-6 p-4 text-white">
-<section className="relative flex items-center">
+      <section className="relative flex items-center">
         <div
           className="flex flex-col items-center justify-center w-80 h-80 text-center rounded-full border-2 border-Beta tooltip"
           onMouseEnter={() => setHoveredStep(1)}
@@ -463,7 +464,7 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section className="flex flex-col items-center container mx-auto py-24">
+    <section className="flex flex-col items-center container mx-auto pb-24">
       <article className="w-full max-w-3xl">
         <div className="p-6 rounded-lg bg-Beta">
           <h5 className="pb-6">Contact Us</h5>

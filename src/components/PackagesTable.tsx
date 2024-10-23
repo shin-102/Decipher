@@ -14,7 +14,7 @@ export const PackagesTable: React.FC<DetailRendering> = ({RenderDetail}) => {
             <h4 className="font-semibold text-center">Start-up</h4>
           </div>
           <div className="py-6">
-            <p>un pack introductif pour les petites entreprises qui cherchent à établir une présence en ligne.</p>
+            <p className="leading-7">un pack introductif pour les petites entreprises qui cherchent à établir une présence en ligne.</p>
           </div>
           <div className="flex justify-center items-center py-6">
             <ul className="text-sm text-left [&>*]:my-4 capitalize">
@@ -61,7 +61,7 @@ export const PackagesTable: React.FC<DetailRendering> = ({RenderDetail}) => {
             <h4 className="font-semibold text-center">Standard</h4>
           </div>
           <div className="py-6">
-            <p>Conçu pour les entreprises qui ont besoin d'une présence en ligne plus solide et plus professionnelle.</p>
+            <p className="leading-7">Conçu pour les entreprises qui ont besoin d'une présence en ligne plus solide et plus professionnelle.</p>
           </div>
           <div className="flex justify-center items-center py-6">
             <ul className="text-sm text-left [&>*]:my-4 capitalize">
@@ -105,7 +105,7 @@ export const PackagesTable: React.FC<DetailRendering> = ({RenderDetail}) => {
             <h4 className="font-semibold text-center">Advanced</h4>
           </div>
           <div className="py-6">
-            <p>Un plan pour les entreprises à la recherche d'une présence en ligne sophistiquée et dynamique.</p>
+            <p className="leading-7">Un plan pour les entreprises à la recherche d'une présence en ligne sophistiquée et dynamique.</p>
           </div>
           <div className="flex justify-center items-center py-6">
             <ul className="text-sm text-left [&>*]:my-4 capitalize">
@@ -154,8 +154,8 @@ export function CustomPack() {
       <section className="container mx-auto flex flex-col md:flex-row justify-center items-center gap-12 py-12">
         <div className="w-full md:w-1/2 ">
           <h2 className="leading-none">Vous souhaitez personnaliser votre propre plan ?</h2>
-          <p className="mt-4">contactez-nous afin de définir vos propres critères</p>
-          <ul className="mt-8">
+          <p className="mt-4 text-slate-400">contactez-nous afin de définir vos propres critères</p>
+          <ul className="mt-8 flex flex-col gap-3">
             <li className="flex items-start gap-3">
               <span className="text-green-500">&#x2713;</span>
               <p>Development web</p>
@@ -175,15 +175,15 @@ export function CustomPack() {
           </ul>
         </div>
         <div className="flex flex-col items-center bg-slate-100 p-8 rounded-2xl">
-          <span className="text-Dark/50 py-2">choose what you need</span>
+          <span className="text-Dark/50 py-2">choisissez ce dont vous avez besoin</span>
           <h3 className="text-Dark py-6">Custom Pack</h3>
           <Link to='/CustomPage'>
             <button className="bg-Alpha hover:bg-cyan-600 text-Dark font-semibold py-2 px-4 rounded">
-                Create Package
+                Créer un plan
             </button>          
           </Link>
 
-          <span className="text-Dark/50 mt-4">TVA</span>
+          {/* <span className="text-Dark/50 mt-4">TVA</span> */}
         </div>
       </section>
     </article>

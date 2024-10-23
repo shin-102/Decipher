@@ -32,7 +32,8 @@ export default function Header() {
     <header className="fixed inset-x-0 md:w-full backdrop-blur bg-Beta-secondary/20 z-10">
       <style>{css}</style>
       <section className="flex justify-between items-center shrink-0 py-2 px-4 md:px-0 container mx-auto relative">
-        <img src={Decipher} alt="Decipher Logo" className="h-12 lg:h-[60px]" />
+        
+        <Link to='/'><img src={Decipher} alt="Decipher Logo" className="h-12 lg:h-[60px]" /></Link>
 
         <nav className="hidden md:block">
           <ul className="flex justify-between items-center gap-5">

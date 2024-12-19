@@ -29,7 +29,7 @@ import Decipher from '../assets/Decipher-Logo.png'
 export function Hero() {
   const [isHovered, setIsHovered] = useState(false);
   return(
-    <section className="bg-[url('./src/assets/5765870_3015280.jpeg')] bg-cover bg-center">
+    <section className="bg-[url('/asset/5765870_3015280.jpeg')] bg-cover bg-center">
       <section className='flex flex-col md:flex-row items-center justify-around h-screen container mx-auto mt-20 md:mt-0' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
           <div className="ml-4 md:ml-0">
             <h1 className='uppercase leading-tight'>Agence Digitale Créative</h1>

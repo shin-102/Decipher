@@ -28,3 +28,7 @@
     @apply text-xs lg:text-[14px] font-light;
   }
 }
+
+bg-hero {
+  background-image: url('./assets/5765870_3015280.jpeg');
+}

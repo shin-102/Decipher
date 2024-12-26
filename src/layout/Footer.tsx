@@ -33,7 +33,7 @@ export default function Footer() {
           </ul>
         </section>
 
-        <section>
+        {/* <section>
           <h5 className="font-medium text-gray-900 dark:text-white">Helpful Links</h5>
 
           <ul className="mt-6 space-y-4 text-sm">
@@ -41,7 +41,7 @@ export default function Footer() {
             <li><Link to='/404' className="hover:text-cyan-400">underConstruct</Link></li>
             <li><Link to='/projects' className="hover:text-cyan-400">Projects</Link></li>
           </ul>
-        </section>
+        </section> */}
 
         <section>
           <h5 className="font-medium text-gray-900 dark:text-white">Legal</h5>

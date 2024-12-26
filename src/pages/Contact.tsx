@@ -6,6 +6,7 @@ import { Flag } from './Home';
 export default function Contact() {
   return(
     <Layout>
+      <div></div>
       <Connect />
       <Iframe />
     </Layout>

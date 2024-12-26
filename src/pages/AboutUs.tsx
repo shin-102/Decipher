@@ -5,7 +5,7 @@ import {About} from './Home';
 export default function AboutUs() {
   return(
     <Layout>
-      <HeaderSect />
+      {/* <HeaderSect /> */}
       <Cases />
       <About />
       <AboutDesc />
@@ -104,38 +104,6 @@ export function Cases() {
 
                     <div>
                         <img className="object-contain w-full h-20 mx-auto filter grayscale" src={Gmedia} alt="" />
-                    </div>
-
-                    <div className="hidden lg:block">
-                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-5.png" alt="" />
-                    </div>
-
-                    <div className="hidden lg:block">
-                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-6.png" alt="" />
-                    </div>
-
-                    <div className="hidden lg:block">
-                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-7.png" alt="" />
-                    </div>
-
-                    <div className="hidden lg:block">
-                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-8.png" alt="" />
-                    </div>
-
-                    <div className="hidden lg:block">
-                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-9.png" alt="" />
-                    </div>
-
-                    <div className="hidden lg:block">
-                        <img className="object-contain w-full mx-auto h-7" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-10.png" alt="" />
-                    </div>
-
-                    <div className="hidden lg:block">
-                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-11.png" alt="" />
-                    </div>
-
-                    <div className="hidden lg:block">
-                        <img className="object-contain w-full h-8 mx-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-12.png" alt="" />
                     </div>
                 </div>
 

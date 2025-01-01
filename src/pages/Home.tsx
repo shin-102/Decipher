@@ -9,7 +9,7 @@ export default function Home() {
   return(
     <Layout>
       <Hero />
-      <Stakes />
+      {/* <Stakes /> */}
       <About />
       <ValueProposition />
       <Service />
@@ -135,7 +135,7 @@ export function About() {
         </svg>
         <div className='flex flex-col ml-6 md:ml-0'>
           <Flag title="A propos de l'entreprise"/>
-          <h2 className='font-extrabold capitalize'>Satisfaction locale et globale</h2>
+          <h2 className='font-extrabold capitalize'>Marketing sécurisé et ajustable</h2>
         </div>
       </div>
 
@@ -169,11 +169,11 @@ export function About() {
 export function ValueProposition() {
   return (
     <article className="relative">
-      <section className="flex flex-col justify-center items-center gap-12 container mx-auto text-left md:text-center bg-Beta rounded-3xl p-16 w-full md:w-1/2">
+      <section className="flex flex-col justify-center items-center gap-12 container mx-auto text-left md:text-center bg-Beta rounded-3xl p-16 w-full md:w-2/3">
         <h2>Nous proposons...</h2>
-        <p className="leading-8"> Des solutions flexibles et mutuellement bénéfiques afin de donner une chance équitable aux entreprises sur un marché concurrentiel. &nbsp; 
+        <p className="leading-8"> Des solutions bénéfiques pour offrir des chances équitables aux entreprises sur un marché concurrentiel. <br />
           <span className="text-Alpha">
-            Pourquoi laisser votre stratégie commerciale et votre potentiel inexploités, alors que le simple manque de publicité et de marketing peut faire toute la différence ?
+            Pourquoi laisser votre stratégie et votre potentiel inexploités ? Un manque de publicité et de marketing peut faire toute la différence !
           </span>
         </p>
         <button className='bg-Alpha text-Dark py-2 px-8 ml-10 rounded'><Link to='/contact'>Contact & Connect</Link></button>

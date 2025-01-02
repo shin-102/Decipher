@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
 
         <p className="max-w-xs text-white leading-8">
-          Connect with DECIPHER AGENCY, as we are more than just a service provider; we are your strategic partner in achieving digital excellence.
+          Contactez DECIPHER AGENCY, car nous sommes plus qu'un simple fournisseur de services, nous sommes votre partenaire stratégique pour atteindre l'excellence numérique.
         </p>
 
         <SocialBar className="flex gap-6 items-center justify-center"/>

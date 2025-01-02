@@ -56,10 +56,10 @@ export const services: ServiceData[] = [
 
     features: (
       <>
-        <Feature>Intuitive user experience</Feature>
-        <Feature>SEO integration</Feature>
-        <Feature>Secure and scalable</Feature>
-        <Feature>Responsive Design</Feature>
+        <Feature>Expérience utilisateur intuitive</Feature>
+        <Feature>Intégration SEO</Feature>
+        <Feature>Sécurité et évolutivité</Feature>
+        <Feature>Design réactif</Feature>
       </>
     )
   },
@@ -78,10 +78,10 @@ export const services: ServiceData[] = [
     ),
     features: (
       <>
-        <Feature>Custom identity development</Feature>
-        <Feature>Cohesive Branding</Feature>
-        <Feature>Digital mockup presentations</Feature>
-        <Feature>asset management and organization</Feature>
+        <Feature>Développement d'une identité personnalisée</Feature>
+        <Feature>Marquage cohésif</Feature>
+        <Feature>Présentations de maquettes numériques</Feature>
+        <Feature>Gestion et organisation des actifs</Feature>
       </>
     )
   },
@@ -108,10 +108,10 @@ export const services: ServiceData[] = [
     ),
     features: (
       <>
-        <Feature>Targeted content creation</Feature>
-        <Feature>community management</Feature>
-        <Feature>Analytics-driven strategy</Feature>
-        <Feature>paid advertising campaigns</Feature>
+        <Feature>Création de contenu ciblé</Feature>
+        <Feature>Gestion de la communauté</Feature>
+        <Feature>Stratégie basée sur l'analyse</Feature>
+        <Feature>Campagnes de publicité payée</Feature>
       </>
     )
   },
@@ -136,10 +136,10 @@ export const services: ServiceData[] = [
     ),
     features: (
       <>
-        <Feature>Strategic planning</Feature>
-        <Feature>Market analysis</Feature>
-        <Feature>Process improvement</Feature>
-        <Feature>Growth-focused advisory</Feature>
+        <Feature>Planification stratégique</Feature>
+        <Feature>Analyse de marché</Feature>
+        <Feature>Amélioration des processus</Feature>
+        <Feature>Conseils axés sur la croissance</Feature>
       </>
     )
   },
@@ -159,10 +159,10 @@ export const services: ServiceData[] = [
     ),
     features: (
       <>
-        <Feature>Professional photography</Feature>
-        <Feature>Compelling visual storytelling</Feature>
-        <Feature>Tailored content per platforms</Feature>
-        <Feature>Advanced post-processing</Feature>
+        <Feature>Photographie professionnelle</Feature>
+        <Feature>Compilation de l'histoire visuelle</Feature>
+        <Feature>Contenu sur mesure pour chaque plateforme</Feature>
+        <Feature>Post-traitement avancé</Feature>
       </>
     )
   },

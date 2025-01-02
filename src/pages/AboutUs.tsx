@@ -81,11 +81,11 @@ export function Cases() {
         <div className="grid items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 sm:gap-x-12 gap-y-12">
             <div className="lg:col-span-2">
                 <h2 className="text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl lg:leading-tight">
-                    1 team.<br />
-                    1 year.<br />
-                    60+ projects.<br />
+                    Depuis 2023.<br />
+                    1 atelier<br />
+                    Multiple projets.<br />
                 </h2>
-                <p className="mt-6 text-base ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <p className="mt-6 text-base ">Notre administration veille à ce que le flux de travail de son département de production soit ininterrompu, ce qui se traduit par une croissance, une satisfaction des clients et un gain pour toutes les parties.</p>
             </div>
 
             <div className="lg:col-span-3 xl:col-span-4">
@@ -131,13 +131,13 @@ export function AboutDesc() {
     <section className="py-16">
       <div className="container mx-auto px-4">
         <div className="text-left">
-          <p className="text-primary-foreground font-semibold">What we value</p>
-          <h2 className="text-4xl font-bold mb-4">Work Culture</h2>
+          <p className="text-primary-foreground font-semibold">Nos valeurs</p>
+          <h2 className="text-4xl font-bold mb-4">Culture d'entreprise</h2>
           <p className="text-muted-foreground mb-6">
-            Our culture is characterized by a dynamic and inclusive environment that promotes individual growth and team cooperation.
+            Notre culture se caractérise par un environnement dynamique et inclusif qui favorise le développement individuel et la coopération au sein de l'équipe.
           </p>
           <p className="text-muted-foreground">
-            We encourage open and honest dialogue at all levels, promoting transparency and constructive feedback. Prioritizing the growth of our team, we provide ongoing training, development opportunities, and access to the latest industry information. Additionally, we promote a healthy work-life balance, supporting flexible work arrangements that allow our team to thrive both personally and professionally.
+            Nous encourageons un dialogue ouvert et honnête à tous les niveaux, en favorisant la transparence et un retour d'information constructif. Accordant la priorité à la croissance de notre équipe, nous proposons une formation continue, des opportunités de développement et l'accès aux dernières informations du secteur. En outre, nous encourageons un bon équilibre entre vie professionnelle et vie privée, en favorisant des modalités de travail flexibles qui permettent à notre équipe de s'épanouir tant sur le plan personnel que professionnel.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
@@ -147,44 +147,44 @@ export function AboutDesc() {
                 <img src={ValueoneSVG} alt="value 1" className='w-14'/>
                 <p className="text-muted-foreground">
                   <span className='font-semibold'>Excellence: </span>
-                  We strive for excellence in all our efforts, aiming to provide exceptional service and results, based on a positive rate of return from our employees.
+                  Nous visons l'excellence dans tous nos efforts, afin de fournir un service et des résultats exceptionnels, sur la base d'un taux de retour positif de la part de nos employés.
                 </p>
               </li>
               <li className="flex items-start gap-3">
                 <img src={ValuetwoSVG} alt="value 1" className='w-14'/>
                 <p className="text-muted-foreground">
                   <span className="font-semibold">Innovation: </span>
-                  We foster a culture of innovation, constantly seeking new ideas and solutions to stay ahead in the digital marketing landscape..
+                  Nous encourageons une culture de l'innovation, en recherchant constamment de nouvelles idées et solutions pour rester en tête dans le paysage du marketing numérique.
                 </p>
               </li>
               <li className="flex items-start gap-3">
                 <img src={ValuethreeSVG} alt="value 1" className='w-14'/>
                 <p className="text-muted-foreground">
-                  <span className="font-semibold">Client Orientation: </span>
-                  We are committed to understanding and meeting the needs of our customers, ensuring that their success is our top priority through monthly targets to be achieved.
+                  <span className="font-semibold">Orientation du client: </span>
+                  Nous nous engageons à comprendre et à satisfaire les besoins de nos clients, en veillant à ce que leur réussite soit notre priorité absolue grâce à des objectifs mensuels à atteindre.
                 </p>
               </li>
               <li className="flex items-start gap-3">
                 <img src={ValuefourSVG} alt="value 1" className='w-14'/>
                 <p className="text-muted-foreground">
                   <span className="font-semibold">Collaboration: </span>
-                  We believe in the power of collaboration, working as a team to achieve collective goals and achieve exceptional results.
+                  Nous croyons au pouvoir de la collaboration, en travaillant en équipe pour atteindre des objectifs collectifs et obtenir des résultats exceptionnels.
                 </p>
               </li>
               <li className="flex items-start gap-3">
                 <img src={ValuefiveSVG} alt="value 1" className='w-14'/>
                 <p className="text-muted-foreground">
-                  <span className="font-semibold">Integrity: </span>
-                  We uphold the highest standards of integrity, maintaining transparency and trust in all our relationships and operations.
+                  <span className="font-semibold">Intégrité: </span>
+                  Nous respectons les normes d'intégrité les plus élevées, en maintenant la transparence et la confiance dans toutes nos relations et opérations.
                 </p>
               </li>
             </ul>
             
             <p className="text-muted-foreground mt-6">
-              This environment allows each member of the team to give the best of themselves, thus ensuring collective success and a favorable work environment where everyone can flourish.
+              Cet environnement permet à chaque membre de l'équipe de donner le meilleur de lui-même, assurant ainsi une réussite collective et un environnement de travail favorable à l'épanouissement de chacun.
             </p>
           </div>
-          <div className="border-l pl-8">
+          {/* <div className="border-l pl-8">
             <blockquote className="text-lg font-semibold text-muted-foreground">
               “Vel ultricies morbi odio facilisi ultrices accumsan donec lacus purus. Lectus nibh ullamcorper ac dictum
               justo in euismod. Risus aenean ut elit massa. In amet aliquet eget cras. Sem volutpat enim tristique.”
@@ -195,9 +195,9 @@ export function AboutDesc() {
                 <p className="text-sm text-muted-foreground">@brenna</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <h2 className="text-2xl font-bold mb-4">Work environment</h2>
           <p className="text-muted-foreground mb-4">
             Our culture is characterized by a dynamic and inclusive environment that promotes individual growth and team cooperation. Here are the main aspects of our culture:
@@ -208,7 +208,7 @@ export function AboutDesc() {
             <li><span className='underline'>Work-Life Balance:</span> We promote a healthy work-life balance, supporting flexible work arrangements that allow our team to thrive personally and professionally.</li>
           </ul>
           <p>This environment allows each member of the team to give the best of themselves, thus ensuring collective success and a favorable work environment where everyone can flourish.</p>
-        </div>
+        </div> */}
       </div>
     </section>
   )

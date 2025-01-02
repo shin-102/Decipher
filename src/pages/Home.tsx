@@ -477,28 +477,28 @@ export const Contact: React.FC = () => {
           <form className="space-y-6" onSubmit={handleFormSubmit}>
             <div className="grid grid-cols-2 gap-6">
               <div className="space-y-2">
-                <label htmlFor="clientName">Full Name</label>
-                <input id="clientName" name="user_name" onChange={handleInputChange} value={formData.user_name} placeholder="Enter your full name" className="w-full px-4 py-2 bg-Beta-secondary rounded text-white"/>
+                <label htmlFor="clientName">Nom complet</label>
+                <input id="clientName" name="user_name" onChange={handleInputChange} value={formData.user_name} placeholder="Entrez votre nom complet" className="w-full px-4 py-2 bg-Beta-secondary rounded text-white"/>
               </div>
               <div className="space-y-2">
-                <label htmlFor="clientPhone">Phone</label>
-                <input id="clientPhone" name="user_phone" onChange={handleInputChange} value={formData.user_phone} placeholder="Enter your phone number" className="w-full px-4 py-2 bg-Beta-secondary rounded text-white" />
+                <label htmlFor="clientPhone">téléphone</label>
+                <input id="clientPhone" name="user_phone" onChange={handleInputChange} value={formData.user_phone} placeholder="Entrez votre numéro de téléphone" className="w-full px-4 py-2 bg-Beta-secondary rounded text-white" />
               </div>
             </div>
             <div className="grid grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label htmlFor="clientEmail">Email</label>
-                <input id="clientEmail" name="user_email" type="email" onChange={handleInputChange} value={formData.user_email} placeholder="Enter your email" className="w-full px-4 py-2 bg-Beta-secondary rounded text-white"/>
+                <input id="clientEmail" name="user_email" type="email" onChange={handleInputChange} value={formData.user_email} placeholder="Entrez votre email" className="w-full px-4 py-2 bg-Beta-secondary rounded text-white"/>
               </div>
               <div className="space-y-2">
-                <label htmlFor="clientCompany">Business name</label>
-                <input id="clientCompany" name="user_company" onChange={handleInputChange} value={formData.user_company} placeholder="Enter your business name" className="w-full px-4 py-2 bg-Beta-secondary rounded text-white"/>
+                <label htmlFor="clientCompany">Nom de l'entreprise</label>
+                <input id="clientCompany" name="user_company" onChange={handleInputChange} value={formData.user_company} placeholder="Entrez le nom de votre entreprise" className="w-full px-4 py-2 bg-Beta-secondary rounded text-white"/>
               </div>
             </div>
 
             <div className="space-y-2">
               <label htmlFor="clientMessage">Message</label>
-              <textarea id="clientMessage" name="message" onChange={handleInputChange} value={formData.message} placeholder="Enter your message" className="w-full px-4 py-2 bg-Beta-secondary rounded min-h-[100px] text-white"/>
+              <textarea id="clientMessage" name="message" onChange={handleInputChange} value={formData.message} placeholder="Entrez votre message" className="w-full px-4 py-2 bg-Beta-secondary rounded min-h-[100px] text-white"/>
             </div>
 
             <div className="flex items-center justify-center">
